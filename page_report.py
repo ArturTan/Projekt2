@@ -60,7 +60,7 @@ def page_report(name_of_file=None):
     Converts log file to the database containing 
     visited urls and number of its occurrences,
     ordered lexicographically. Log file may be
-    put from the shell command line.
+    introduced from the shell command line.
     
     Parameters
     -----------
