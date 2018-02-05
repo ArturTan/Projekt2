@@ -8,12 +8,14 @@ from sys import argv, stderr
 
 class Auxiliary():
 
-    """Auxiliary class with set of function that will be used in page_report function
+    """
+    Auxiliary class with set of function that will be used in page_report function
     """
 
     @staticmethod
     def data(name_of_file=None):
-        """Reading data from the file
+        """
+        Reading data from the file
         """
         if not name_of_file:
              name_of_file = argv[1]
@@ -33,7 +35,8 @@ class Auxiliary():
 
     @staticmethod
     def pattern(example_requests, http_requests):
-        """Setting regex patterns to be searched in the text
+        """
+        Setting regex patterns to be searched in the text
         """
         IPv4 = "(\d+\.\d+\.\d+\.\d+).+" # Intentional violation of PEP8 in naming "IPv4"
         datetime = "(\[.*\]).+"
@@ -53,8 +56,11 @@ class Auxiliary():
 
 
 def page_report(name_of_file=None):
-    """Converts log file to the database containing visited urls and number of its occurrences,
-    ordered lexicographically. Log file may be put from the shell command line.
+    """
+    Converts log file to the database containing 
+    visited urls and number of its occurrences,
+    ordered lexicographically. Log file may be
+    put from the shell command line.
     
     Parameters
     -----------
@@ -67,7 +73,8 @@ def page_report(name_of_file=None):
     
     Raises
     -----------
-    UnicodeDecodeError: if the file is not written in utf-8 standard. 
+    UnicodeDecodeError: if the file is not written 
+                        in utf-8 standard. 
     """
 
     data = Auxiliary.data(name_of_file)
