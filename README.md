@@ -11,7 +11,7 @@ git clone https://github.com/ArturTan/Projekt2
 ```
 
 ## Using the script:
-The script converts log file to the database containing visited urls and number of its occurrences, ordered lexicographically. Log file may be put from the shell command line.
+The script converts log file to the database containing visited urls and number of its occurrences, ordered lexicographically. Log file may be introduced as the argument from the shell command line.
 
 ```
 $ python page_report.py log.file > report.csv
